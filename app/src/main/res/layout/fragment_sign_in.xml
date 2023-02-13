@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Tên đăng nhập"
+        android:textColor="@color/deep_green"
+        android:textColorHint="@color/deep_green"
+        android:textSize="17sp"
+        app:hintTextColor="@color/deep_green"
+        app:boxStrokeColor="@color/deep_green"
+        app:boxStrokeErrorColor="@color/pink_red"
+        app:startIconCheckable="true"
+        app:startIconDrawable="@drawable/icon_user"
+        app:startIconTint="@color/deep_green"
+        android:layout_marginTop="5dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietUsername"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Mật khẩu"
+        android:textColorHint="@color/deep_green"
+        app:boxStrokeColor="@color/deep_green"
+        app:boxStrokeErrorColor="@color/pink_red"
+        app:hintTextColor="@color/deep_green"
+        app:startIconDrawable="@drawable/icon_eye"
+        app:startIconTint="@color/deep_green">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/deep_green"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="10dp"
+        android:layout_gravity="center"
+        android:text="Đăng nhập"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_sign_button"
+        android:backgroundTint="@color/deep_green"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOAuthSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hoặc Đăng nhập với"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/deep_green"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:id="@+id/llOAuthChoices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/ivTwitter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/twitter"
+            android:scaleType="centerInside"
+            />
+        <ImageView
+            android:id="@+id/ivFacebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/facebook"
+            android:scaleType="centerInside"
+            />
+        <ImageView
+            android:id="@+id/ivLinkedIn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/linkedin"
+            android:scaleType="centerInside"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

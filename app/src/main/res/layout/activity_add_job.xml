@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_green"
+    android:orientation="vertical"
+    tools:context=".Sign.AddJob">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Thêm công việc của bạn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/llAddJob"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_4_corners_layout"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:hint="Công việc"
+            android:textColorHint="@color/deep_green"
+            app:boxStrokeColor="@color/deep_green"
+            app:boxStrokeErrorColor="@color/pink_red"
+            app:hintTextColor="@color/deep_green"
+            app:startIconDrawable="@drawable/icon_job"
+            app:startIconTint="@color/moss">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietJob"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="Nơi làm việc"
+            android:textColorHint="@color/deep_green"
+            app:boxStrokeColor="@color/deep_green"
+            app:boxStrokeErrorColor="@color/pink_red"
+            app:hintTextColor="@color/deep_green"
+            app:startIconDrawable="@drawable/icon_location"
+            app:startIconTint="@color/pink_red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietWorkPlace"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="Mô tả"
+            android:textColorHint="@color/deep_green"
+            app:boxStrokeColor="@color/deep_green"
+            app:boxStrokeErrorColor="@color/pink_red"
+            app:hintTextColor="@color/deep_green"
+            app:startIconDrawable="@drawable/icon_description"
+            app:startIconTint="@color/deep_green">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietDescription"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_sign_button"
+                android:text="Quay lại"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/deep_green"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/gray"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_sign_button"
+                android:text="Lưu"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingHorizontal="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

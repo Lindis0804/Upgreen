@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Tên"
+        android:textColorHint="@color/deep_green"
+        app:boxStrokeColor="@color/deep_green"
+        app:boxStrokeErrorColor="@color/pink_red"
+        app:hintTextColor="@color/deep_green"
+        app:startIconDrawable="@drawable/icon_user"
+        app:startIconTint="@color/deep_green">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Tên đăng nhập"
+        android:textColorHint="@color/deep_green"
+        app:boxStrokeColor="@color/deep_green"
+        app:boxStrokeErrorColor="@color/pink_red"
+        app:hintTextColor="@color/deep_green"
+        app:startIconDrawable="@drawable/icon_user"
+        app:startIconTint="@color/deep_green">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietUsername"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Mật khẩu"
+        android:textColorHint="@color/deep_green"
+        app:boxStrokeColor="@color/deep_green"
+        app:boxStrokeErrorColor="@color/pink_red"
+        app:hintTextColor="@color/deep_green"
+        app:startIconDrawable="@drawable/icon_eye"
+        app:startIconTint="@color/deep_green">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Nhập lại mật khẩu"
+        android:textColorHint="@color/deep_green"
+        app:boxStrokeColor="@color/deep_green"
+        app:boxStrokeErrorColor="@color/pink_red"
+        app:hintTextColor="@color/deep_green"
+        app:startIconDrawable="@drawable/icon_eye"
+        app:startIconTint="@color/deep_green">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPasswordAgain"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Gmail"
+        android:textColorHint="@color/deep_green"
+        app:boxStrokeColor="@color/deep_green"
+        app:boxStrokeErrorColor="@color/pink_red"
+        app:hintTextColor="@color/deep_green"
+        app:startIconDrawable="@drawable/icon_mail"
+        app:startIconTint="@color/deep_green">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietGmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Phone"
+        android:textColorHint="@color/deep_green"
+        app:boxStrokeColor="@color/deep_green"
+        app:boxStrokeErrorColor="@color/pink_red"
+        app:hintTextColor="@color/deep_green"
+        app:startIconDrawable="@drawable/icon_phone"
+        app:startIconTint="@color/deep_green">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tietPhone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+   <TextView
+       android:id="@+id/tvError"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="@color/pink_red"
+       android:textSize="12sp"
+       android:layout_gravity="center"
+       android:text="Tên đăng nhập đã tồn tại."
+       android:layout_marginTop="10dp"
+       />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn đã có tài khoản?"
+            android:textColor="@color/deep_green"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Đăng nhập"
+            android:textColor="@color/deep_green"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_sign_button"
+        android:backgroundTint="@color/deep_green"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="10dp"
+        android:text="Đăng kí"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
