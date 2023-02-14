@@ -1,6 +1,8 @@
 package com.ldh.upgreen.Model;
 
-public class Place {
+import java.io.Serializable;
+
+public class Place implements Serializable {
     private String _id = "";
     private String placeName = "";
     private String address = "";
@@ -16,6 +18,11 @@ public class Place {
         this.placeName = placeName;
         this.address = address;
         this.pic = pic;
+    }
+
+    public Place(String placeName, String address) {
+        this.placeName = placeName;
+        this.address = address;
     }
 
     public String get_id() {

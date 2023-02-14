@@ -1,8 +1,9 @@
 package com.ldh.upgreen.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Paper {
+public class Paper implements Serializable {
     private String _id = "";
     private User author = new User();
     private String title = "";

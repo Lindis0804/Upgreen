@@ -1,6 +1,8 @@
 package com.ldh.upgreen.Model;
 
-public class PaperBody {
+import java.io.Serializable;
+
+public class PaperBody implements Serializable {
     private String content = "";
     private String pic = "";
     private int type = 0;

@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -47,6 +48,17 @@ public class FieldAdapter extends RecyclerView.Adapter<FieldAdapter.ViewHolder> 
             super(itemView);
             cbField = itemView.findViewById(R.id.cbField);
             _fieldClickListener = fieldClickListener;
+            cbField.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                    if (b){
+                        _fieldClickListener.onSelectedField(getAdapterPosition());
+                    }
+                    else{
+                        _fieldClickListener.onUnSelectedField(getAdapterPosition());
+                    }
+                }
+            });
         }
     }
 }

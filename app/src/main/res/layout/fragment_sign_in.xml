@@ -59,6 +59,7 @@
         android:textSize="17sp"
         android:textStyle="bold"
         android:textColor="@color/deep_green"
+        android:foreground="?android:attr/selectableItemBackground"
         />
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bSignIn"
@@ -104,6 +105,7 @@
             android:layout_height="50dp"
             android:src="@drawable/twitter"
             android:scaleType="centerInside"
+            android:foreground="?android:attr/selectableItemBackground"
             />
         <ImageView
             android:id="@+id/ivFacebook"
@@ -111,6 +113,7 @@
             android:layout_height="50dp"
             android:src="@drawable/facebook"
             android:scaleType="centerInside"
+            android:foreground="?android:attr/selectableItemBackground"
             />
         <ImageView
             android:id="@+id/ivLinkedIn"
@@ -118,6 +121,7 @@
             android:layout_height="50dp"
             android:src="@drawable/linkedin"
             android:scaleType="centerInside"
+            android:foreground="?android:attr/selectableItemBackground"
             />
     </LinearLayout>
     </LinearLayout>

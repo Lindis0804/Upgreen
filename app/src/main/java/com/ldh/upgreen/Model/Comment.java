@@ -1,8 +1,9 @@
 package com.ldh.upgreen.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Comment {
+public class Comment implements Serializable {
     private String _id ;
     private User author ;
     private Comment replied ;

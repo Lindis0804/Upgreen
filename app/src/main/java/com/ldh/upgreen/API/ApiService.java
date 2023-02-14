@@ -13,6 +13,7 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 
 public interface ApiService {
     Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
@@ -31,7 +32,8 @@ public interface ApiService {
     @GET("user/get")
     Call<DataResponse> getUser(@Header("token") String token);
     //user
-
+    @PUT("/user/update")
+    Call<DataResponse> updateUser(@Header("token") String token,@Body User user);
     //field
     @GET("/field/get/all")
     Call<DataResponse> getAllField(@Header("token") String token);

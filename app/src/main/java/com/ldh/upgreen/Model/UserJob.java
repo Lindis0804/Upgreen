@@ -9,7 +9,21 @@ public class UserJob implements Serializable {
     private String description = "";
     public UserJob(){};
 
-    public UserJob(String _id,Job job, Place workplace,String description) {
+    public UserJob(Job job, Place workplace, String description) {
+        this.job = job;
+        this.workplace = workplace;
+        this.description = description;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public UserJob(String _id, Job job, Place workplace, String description) {
         this._id = _id;
         this.job = job;
         this.workplace = workplace;

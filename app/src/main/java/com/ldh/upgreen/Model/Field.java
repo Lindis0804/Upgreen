@@ -1,6 +1,8 @@
 package com.ldh.upgreen.Model;
 
-public class Field {
+import java.io.Serializable;
+
+public class Field implements Serializable {
     private String _id = "";
     private String title = "";
     private int numOfCare = 0;

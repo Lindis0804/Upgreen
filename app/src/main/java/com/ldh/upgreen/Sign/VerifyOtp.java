@@ -65,6 +65,7 @@ public class VerifyOtp extends AppCompatActivity {
                                 DataResponse res = response.body();
                                 SharedPreferences.Editor editor = getApplication().getSharedPreferences("UserInfo", Context.MODE_PRIVATE).edit();
                                 editor.putString("token",res.getData().getToken());
+                                editor.commit();
                                 startActivity(new Intent(VerifyOtp.this,PickRole.class));
                                 Toast.makeText(VerifyOtp.this, res.getData().getToken(), Toast.LENGTH_SHORT).show();
                             }

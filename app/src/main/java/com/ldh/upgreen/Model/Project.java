@@ -1,8 +1,9 @@
 package com.ldh.upgreen.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Project {
+public class Project implements Serializable {
     private String _id="";
     private String title="";
     private String pic="";

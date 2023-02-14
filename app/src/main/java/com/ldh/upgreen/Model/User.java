@@ -1,16 +1,17 @@
 package com.ldh.upgreen.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class User {
+public class User implements Serializable {
     private String _id = "";
-    private String name="";
+    private String name = "";
     private String username = "";
     private String password = "";
     private String avatar = "";
     private ArrayList<UserJob> jobs = new ArrayList<>();
-    private Date birthday = new Date();
+    private String birthday = "";
     private int role = 0;
     private String phone = "";
     private String gmail = "";
@@ -18,13 +19,17 @@ public class User {
     private ArrayList<Field> caredFields = new ArrayList<>();
     private ArrayList<Project> projects = new ArrayList<>();
     private String linkedInLink = "";
-    private ArrayList<Spe > spes = new ArrayList<>();
+    private ArrayList<Spe> spes = new ArrayList<>();
     private ArrayList<User> followers = new ArrayList<>();
     private ArrayList<User> likers = new ArrayList<>();
     private String takingPartInSomeProjects = "";
-    public User(){};
 
-    public User(String _id,String name, String username, String password, String avatar, ArrayList<UserJob> jobs, Date birthday, int role, String phone, String gmail, String position, ArrayList<Field> caredFields, ArrayList<Project> projects, String linkedInLink, ArrayList<Spe> spes, ArrayList<User> followers, ArrayList<User> likers, String takingPartInSomeProjects) {
+    public User() {
+    }
+
+    ;
+
+    public User(String _id, String name, String username, String password, String avatar, ArrayList<UserJob> jobs, String birthday, int role, String phone, String gmail, String position, ArrayList<Field> caredFields, ArrayList<Project> projects, String linkedInLink, ArrayList<Spe> spes, ArrayList<User> followers, ArrayList<User> likers, String takingPartInSomeProjects) {
         this._id = _id;
         this.username = username;
         this.password = password;
@@ -51,6 +56,20 @@ public class User {
         this.password = password;
         this.phone = phone;
         this.gmail = gmail;
+        this.role = role;
+    }
+
+    public User(int role, ArrayList<UserJob> jobs, String birthday, ArrayList<Field> caredFields, String linkedInLink, String takingPartInSomeProjects) {
+        this.jobs = jobs;
+        this.birthday = birthday;
+        this.caredFields = caredFields;
+        this.linkedInLink = linkedInLink;
+        this.takingPartInSomeProjects = takingPartInSomeProjects;
+    }
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
 
     public String getName() {
@@ -101,11 +120,11 @@ public class User {
         this.jobs = jobs;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 

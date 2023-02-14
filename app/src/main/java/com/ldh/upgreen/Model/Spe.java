@@ -1,6 +1,8 @@
 package com.ldh.upgreen.Model;
 
-public class Spe {
+import java.io.Serializable;
+
+public class Spe implements Serializable {
     private String _id="";
     private String title = "";
     public Spe(){};

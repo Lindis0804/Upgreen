@@ -1,8 +1,9 @@
 package com.ldh.upgreen.Model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Otp {
+public class Otp implements Serializable {
     private String _id="";
     private String gmail ="";
     private String otp = "";

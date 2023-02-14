@@ -14,11 +14,11 @@ import com.ldh.upgreen.R;
 
 import java.util.ArrayList;
 
-public class JobAdapter extends RecyclerView.Adapter<JobAdapter.ViewHolder> {
+public class UserJobAdapter extends RecyclerView.Adapter<UserJobAdapter.ViewHolder> {
     private ArrayList<UserJob> userJobs = new ArrayList<>();
     private JobClickListener jobClickListener;
     private ImageButton ibFix;
-    public JobAdapter(ArrayList<UserJob> userJobs, JobClickListener jobClickListener) {
+    public UserJobAdapter(ArrayList<UserJob> userJobs, JobClickListener jobClickListener) {
         this.userJobs = userJobs;
         this.jobClickListener = jobClickListener;
     }
