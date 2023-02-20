@@ -30,7 +30,10 @@ import java.util.Map;
 
 public class Utils extends Fragment {
     public static String[] privacies = {"Public", "Only me"};
-
+    public static String macova = "192.168.1.173";
+    public static String redmi = "192.168.100.212";
+    public static String dhnn = "10.20.2.121";
+    public static String url = "http://"+dhnn+":3000/";
     public static class LoadImage extends AsyncTask<String, Void, Bitmap> {
         private ImageView imageViewAvatar;
         private Bitmap avatar;

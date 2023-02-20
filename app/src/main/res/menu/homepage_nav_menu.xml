@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_homepage"
+        android:icon="@drawable/icon_home"
+        android:iconTint="@color/moss"
+        android:title="Trang chủ" />
+    <item
+        android:id="@+id/nav_connect"
+        android:icon="@drawable/icon_message"
+        android:iconTint="@color/moss"
+        android:title="Kết nối" />
+    <item
+        android:id="@+id/nav_news"
+        android:icon="@drawable/icon_statistic"
+        android:iconTint="@color/moss"
+        android:title="Tin tức" />
+    <item
+        android:id="@+id/nav_project"
+        android:icon="@drawable/icon_project"
+        android:iconTint="@color/moss"
+        android:title="Dự án" />
+    <item
+        android:id="@+id/nav_forum"
+        android:icon="@drawable/icon_people_group"
+        android:iconTint="@color/moss"
+        android:title="Diễn đàn" />
+</menu>

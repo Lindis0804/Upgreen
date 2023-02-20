@@ -13,12 +13,13 @@ public class Project implements Serializable {
     private ArrayList<User> sharers = new ArrayList<>();
     private ArrayList<Field> fields = new ArrayList<>();
     private double validationScore = 0.0;
-    private String introduction;
+    private String introduction="";
     private ArrayList<User> members = new ArrayList<>();
     private ArrayList<User> investors = new ArrayList<>();
     private int numOfRasingFund = 0;
     private int numOfSuccess = 0;
     private String detailPlan = "";
+    private int ERI,EI;
     public Project(){};
 
     public Project(String _id, String title, String pic, ArrayList<User> likers, ArrayList<Comment> comments, ArrayList<User> viewers, ArrayList<User> sharers, ArrayList<Field> fields, double validationScore, String introduction, ArrayList<User> members, ArrayList<User> investors, int numOfRasingFund, int numOfSuccess, String detailPlan) {
@@ -37,6 +38,22 @@ public class Project implements Serializable {
         this.numOfRasingFund = numOfRasingFund;
         this.numOfSuccess = numOfSuccess;
         this.detailPlan = detailPlan;
+    }
+
+    public int getERI() {
+        return ERI;
+    }
+
+    public void setERI(int ERI) {
+        this.ERI = ERI;
+    }
+
+    public int getEI() {
+        return EI;
+    }
+
+    public void setEI(int EI) {
+        this.EI = EI;
     }
 
     public String get_id() {

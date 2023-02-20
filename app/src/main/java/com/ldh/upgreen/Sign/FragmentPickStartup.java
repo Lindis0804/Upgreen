@@ -31,7 +31,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.Gson;
 import com.ldh.upgreen.API.ApiService;
-import com.ldh.upgreen.Homepage.Homepage;
+import com.ldh.upgreen.View.Homepage.Homepage;
 import com.ldh.upgreen.Model.Field;
 import com.ldh.upgreen.Model.Job;
 import com.ldh.upgreen.Model.Place;
@@ -47,7 +47,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
-import java.util.Date;
 
 import retrofit2.Call;
 import retrofit2.Callback;

@@ -17,7 +17,7 @@
             android:id="@+id/ibBack"
             android:layout_width="@dimen/ib"
             android:layout_height="@dimen/ib"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:background="@null"
             android:scaleType="centerCrop"
@@ -52,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-        android:background="@drawable/custom_4_corners_layout">
+        android:background="@drawable/custom_2_corners_layout">
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/vpPickRole"

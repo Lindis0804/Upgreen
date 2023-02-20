@@ -4,4 +4,5 @@
     <dimen name="content">15sp</dimen>
     <dimen name="ib">30dp</dimen>
     <dimen name="header">30sp</dimen>
+    <dimen name="tits">50sp</dimen>
 </resources>

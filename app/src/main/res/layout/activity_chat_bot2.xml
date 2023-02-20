@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.Project.ChatBot">
+    <ImageButton
+        android:layout_width="@dimen/ib"
+        android:layout_height="@dimen/ib"
+        android:src="@drawable/icon_arrow_left"
+        android:background="@null"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:tint="@color/moss" />
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_comment"
+        android:padding="10dp"
+        android:text="Hiện tại có rất nhiều ứng dụng hỗ trợ học tập
+cho học sinh, sinh viên, nên trong đề án chi
+tiết bạn nên thêm phần lợi thế cạnh tranh để
+có thể làm nổi bật được thể mạnh của bạn
+cho nhà đầu tư, bạn cũng nên thêm phần kế
+hoạch kinh doanh để cho nhà đầu tư có thể
+biết được số tiền đầu tư của họ sẽ được sử
+dụng như thế nào.
+Bạn có thể tham khảo giải pháp của các công
+ty như Elsa Speak, SeeSo, TConnect, Hust Quiz"
+        android:textColor="@color/moss"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_comment_1"
+        android:padding="10dp"
+        android:text="Gợi ý công nghệ sử dụng"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_comment"
+        android:padding="10dp"
+        android:text="Bạn có thể sử dụng Flutter, đây là công nghệ
+hiện tại được Google Support rất mạnh mẽ có
+thể sử dụng để build trên cả web và app, giúp
+bạn nhanh chóng tạo ra sản phẩm để thử
+nghiệm cũng như public sản phẩm"
+        android:textColor="@color/moss"
+        android:textSize="12sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn muốn biết thêm về"
+        android:textColor="@color/deep_green"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Công nghệ sử dụng"
+        android:textColor="@color/moss"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đề xuất các cuộc thi liên quan"
+        android:textColor="@color/moss"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đề xuất cố vấn"
+        android:textColor="@color/moss"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+</LinearLayout>
